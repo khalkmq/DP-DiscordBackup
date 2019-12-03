@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Global ₯ ㊕ ᴅᴏɴ’ᴛ〄ᴘᴀɴiᴄ - &#127888;important-roles</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <style>
+        /* === GENERAL === */
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/6c6374bad0b0b6d204d8d6dc4a18d820.woff);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/e8acd7d9bf6207f99350ca9f9e23b168.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/3bdef1251a424500c1b3a78dea9b7e57.woff);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/be0060dafb7a0e31d2a1ca17c0708636.woff);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(https://discordapp.com/assets/8e12fb4f14d9c4592eb8ec9f22337b04.woff);
+    font-weight: 700;
+}
+
+body {
+    font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    object-fit: contain;
+}
+
+.markdown {
+    white-space: pre-wrap;
+    line-height: 1.3;
+    overflow-wrap: break-word;
+}
+
+.spoiler {
+    border-radius: 3px;
+}
+
+.quote {
+    border-left: 4px solid;
+    border-radius: 3px;
+    margin: 8px 0;
+    padding-left: 10px;
+}
+
+.pre {
+    font-family: "Consolas", "Courier New", Courier, monospace;
+}
+
+.pre--multiline {
+    margin-top: 4px;
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.pre--inline {
+    padding: 2px;
+    border-radius: 3px;
+    font-size: 85%;
+}
+
+.mention {
+    font-weight: 500;
+}
+
+.emoji {
+    width: 1.45em;
+    height: 1.45em;
+    margin: 0 1px;
+    vertical-align: -0.4em;
+}
+
+.emoji--small {
+    width: 1rem;
+    height: 1rem;
+}
+
+.emoji--large {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* === INFO === */
+
+.info {
+    display: flex;
+    max-width: 100%;
+    margin: 0 5px 10px 5px;
+}
+
+.info__guild-icon-container {
+    flex: 0;
+}
+
+.info__guild-icon {
+    max-width: 88px;
+    max-height: 88px;
+}
+
+.info__metadata {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.info__guild-name {
+    font-size: 1.4em;
+}
+
+.info__channel-name {
+    font-size: 1.2em;
+}
+
+.info__channel-topic {
+    margin-top: 2px;
+}
+
+.info__channel-message-count {
+    margin-top: 2px;
+}
+
+.info__channel-date-range {
+    margin-top: 2px;
+}
+
+/* === CHATLOG === */
+
+.chatlog {
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+
+.chatlog__message-group {
+    display: flex;
+    margin: 0 10px;
+    padding: 15px 0;
+    border-top: 1px solid;
+}
+
+.chatlog__author-avatar-container {
+    flex: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.chatlog__author-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.chatlog__messages {
+    flex: 1;
+    min-width: 50%;
+    margin-left: 20px;
+}
+
+.chatlog__author-name {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.chatlog__timestamp {
+    margin-left: 5px;
+    font-size: .75em;
+}
+
+.chatlog__message {
+    padding: 2px 5px;
+    margin-right: -5px;
+    margin-left: -5px;
+    background-color: transparent;
+    transition: background-color 1s ease;
+}
+
+.chatlog__content {
+    font-size: .9375em;
+    word-wrap: break-word;
+}
+
+.chatlog__edited-timestamp {
+    margin-left: 3px;
+    font-size: .8em;
+}
+
+.chatlog__attachment-thumbnail {
+    margin-top: 5px;
+    max-width: 50%;
+    max-height: 500px;
+    border-radius: 3px;
+}
+
+.chatlog__embed {
+    margin-top: 5px;
+    display: flex;
+    max-width: 520px;
+}
+
+.chatlog__embed-color-pill {
+    flex-shrink: 0;
+    width: 4px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.chatlog__embed-content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+    border: 1px solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.chatlog__embed-content {
+    width: 100%;
+    display: flex;
+}
+
+.chatlog__embed-text {
+    flex: 1;
+}
+
+.chatlog__embed-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.chatlog__embed-author-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+    border-radius: 50%;
+}
+
+.chatlog__embed-author-name {
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-title {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-description {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.chatlog__embed-fields {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chatlog__embed-field {
+    flex: 0;
+    min-width: 100%;
+    max-width: 506px;
+    padding-top: 10px;
+}
+
+.chatlog__embed-field--inline {
+    flex: 1;
+    flex-basis: auto;
+    min-width: 150px;
+}
+
+.chatlog__embed-field-name {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-field-value {
+    font-size: .875em;
+    font-weight: 500;
+}
+
+.chatlog__embed-thumbnail {
+    flex: 0;
+    margin-left: 20px;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-image-container {
+    margin-top: 10px;
+}
+
+.chatlog__embed-image {
+    max-width: 500px;
+    max-height: 400px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-footer {
+    margin-top: 10px;
+}
+
+.chatlog__embed-footer-icon {
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.chatlog__embed-footer-text {
+    font-weight: 500;
+    font-size: .75em;
+}
+
+.chatlog__reactions {
+    display: flex;
+}
+
+.chatlog__reaction {
+    display: flex;
+    align-items: center;
+    margin: 6px 2px 2px 2px;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+
+.chatlog__reaction-count {
+    min-width: 9px;
+    margin-left: 6px;
+    font-size: .875em;
+}
+
+.chatlog__bot-tag {
+    margin-left: 0.3em;
+    background: #7289da;
+    color: #ffffff;
+    font-size: 0.625em;
+    padding: 1px 2px;
+    border-radius: 3px;
+    vertical-align: middle;
+    line-height: 1.3;
+    position: relative;
+    top: -.2em;
+}
+    </style>
+    <style>
+        /* === GENERAL === */
+
+body {
+    background-color: #36393e;
+    color: #dcddde;
+}
+
+a {
+    color: #0096cf;
+}
+
+.spoiler {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.quote {
+    border-color: #4f545c;
+}
+
+.pre {
+    background-color: #2f3136 !important;
+}
+
+.pre--multiline {
+    border-color: #282b30 !important;
+    color: #839496 !important;
+}
+
+.mention {
+    color: #7289da;
+}
+
+/* === INFO === */
+
+.info__guild-name {
+    color: #ffffff;
+}
+
+.info__channel-name {
+    color: #ffffff;
+}
+
+.info__channel-topic {
+    color: #ffffff;
+}
+
+/* === CHATLOG === */
+
+.chatlog__message-group {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.chatlog__author-name {
+    color: #ffffff;
+}
+
+.chatlog__timestamp {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.chatlog__message--highlighted {
+    background-color: rgba(114, 137, 218, 0.2) !important;
+}
+
+.chatlog__message--pinned {
+    background-color: rgba(249, 168, 37, 0.05);
+}
+
+.chatlog__edited-timestamp {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.chatlog__embed-content-container {
+    background-color: rgba(46, 48, 54, 0.3);
+    border-color: rgba(46, 48, 54, 0.6);
+}
+
+.chatlog__embed-author-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-author-name-link {
+    color: #ffffff;
+}
+
+.chatlog__embed-title {
+    color: #ffffff;
+}
+
+.chatlog__embed-description {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__embed-field-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-field-value {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__embed-footer {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chatlog__reaction {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.chatlog__reaction-count {
+    color: rgba(255, 255, 255, 0.3);
+}
+    </style>
+
+    <script>
+        function scrollToMessage(event, id) {
+            var element = document.getElementById('message-' + id);
+
+            if (element !== null && element !== undefined) {
+                event.preventDefault();
+
+                element.classList.add('chatlog__message--highlighted');
+
+                window.scrollTo({
+                    top: element.getBoundingClientRect().top - document.body.getBoundingClientRect().top - (window.innerHeight / 2),
+                    behavior: 'smooth'
+                });
+
+                window.setTimeout(function() {
+                    element.classList.remove('chatlog__message--highlighted');
+                }, 2000);
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.pre--multiline').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div class="info">
+    <div class="info__guild-icon-container">
+        <img class="info__guild-icon" src="https://cdn.discordapp.com/icons/527266737939415041/a_2388cf4e797697dc8cc2c8d925d8301a.png" />
+    </div>
+    <div class="info__metadata">
+        <div class="info__guild-name">Global ₯ ㊕ ᴅᴏɴ’ᴛ〄ᴘᴀɴiᴄ</div>
+        <div class="info__channel-name">&#127888;important-roles</div>
+
+            <div class="info__channel-topic">Claim important roles such as getting access to special hidden channels. Getting the roles below will help us avoid pinging everyone.</div>
+
+        <div class="info__channel-message-count">27 messages</div>
+
+            <div class="info__channel-date-range">
+                    Before 03-Dec-19 12:00 AM
+            </div>
+    </div>
+</div>
+
+<div class="chatlog">
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/377644362856792064/54c6b28bd247bbff083c05a7eed2ab9f.png" />
+            </div>
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Hinako#5930" data-user-id="377644362856792064">Hinako</span>
+
+
+                <span class="chatlog__timestamp">13-Sep-19 02:56 PM</span>
+
+                    <div class="chatlog__message " data-message-id="622143500963807232" id="message-622143500963807232">
+                        <div class="chatlog__content">
+                            <span class="markdown"></span>
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="https://cdn.discordapp.com/attachments/596656679563821056/622143499189354516/Divider_-_Important_roles.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="https://cdn.discordapp.com/attachments/596656679563821056/622143499189354516/Divider_-_Important_roles.png" />
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="chatlog__message " data-message-id="622143564268306442" id="message-622143564268306442">
+                        <div class="chatlog__content">
+                            <span class="markdown"><div class="pre pre--multiline language-ml">&quot;This channel was created for all members in the server to get important roles such as getting access to special hidden channels. Getting the roles below will help us avoid pinging everyone.&quot;</div></span>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="chatlog__message " data-message-id="622143680043810856" id="message-622143680043810856">
+                        <div class="chatlog__content">
+                            <span class="markdown"><div class="quote"><img class="emoji " alt="UmaruParty" title="UmaruParty" src="https://cdn.discordapp.com/emojis/393982406580895745.gif" /> <strong>Form a party for events</strong>
+React <img class="emoji " alt="🎈" title="🎈" src="https://twemoji.maxcdn.com/2/72x72/1f388.png" /> to get the role <span class="mention">@Event</span>. Use this role <em><strong>exclusively</strong></em> to find players who want to clear <strong>events</strong>.</div></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <img class="emoji emoji--small" alt="🎈" title="🎈" src="https://twemoji.maxcdn.com/2/72x72/1f388.png" />
+                                    <span class="chatlog__reaction-count">31</span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="chatlog__message " data-message-id="622143799409377290" id="message-622143799409377290">
+                        <div class="chatlog__content">
+                            <span class="markdown"><div class="quote"><img class="emoji " alt="NekoFight" title="NekoFight" src="https://cdn.discordapp.com/emojis/612326412547784787.gif" /> <strong>Find farming support peers</strong>
+React <img class="emoji " alt="🆘" title="🆘" src="https://twemoji.maxcdn.com/2/72x72/1f198.png" /> to get the role <span class="mention">@Support Team</span>. Use this role <em><strong>exclusively</strong></em> to find players who want to party for <strong>dungeons, boss labs, boss sessions at quest board, wexp or mats</strong>.</div></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <img class="emoji emoji--small" alt="🆘" title="🆘" src="https://twemoji.maxcdn.com/2/72x72/1f198.png" />
+                                    <span class="chatlog__reaction-count">30</span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="chatlog__message " data-message-id="622143894473408542" id="message-622143894473408542">
+                        <div class="chatlog__content">
+                            <span class="markdown"><div class="quote"><img class="emoji " alt="0ThinkFish" title="0ThinkFish" src="https://cdn.discordapp.com/emojis/590614597267095553.gif" /> <strong>Fish &amp; think</strong>
+React to <img class="emoji " alt="🎣" title="🎣" src="https://twemoji.maxcdn.com/2/72x72/1f3a3.png" /> to get the role <span class="mention">@Rookie Fisher</span>. Use this role <em><strong>exclusively</strong></em> to find <strong>guildmates</strong> to <strong>fish</strong> on the same server as you. <s>And collect your thoughts on all the glitches the devs need to fix.</s></div></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <img class="emoji emoji--small" alt="🎣" title="🎣" src="https://twemoji.maxcdn.com/2/72x72/1f3a3.png" />
+                                    <span class="chatlog__reaction-count">20</span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="chatlog__message " data-message-id="622143920352002049" id="message-622143920352002049">
+                        <div class="chatlog__content">
+                            <span class="markdown"></span>
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="https://cdn.discordapp.com/attachments/596656679563821056/622143916019286029/Transparent_divider.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="https://cdn.discordapp.com/attachments/596656679563821056/622143916019286029/Transparent_divider.png" />
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="chatlog__message " data-message-id="622144030087577601" id="message-622144030087577601">
+                        <div class="chatlog__content">
+                            <span class="markdown"><div class="quote"><img class="emoji " alt="abell" title="abell" src="https://cdn.discordapp.com/emojis/548981905639473163.gif" /> <strong>New SAOIF game updates</strong>
+React <img class="emoji " alt="🔔" title="🔔" src="https://twemoji.maxcdn.com/2/72x72/1f514.png" /> to get the role <span class="mention">@Announcement</span>. By getting this role, you will get a ping everytime a new SAOIF game updates will be posted in <strong><span class="mention">#&#128276;saoif-news</span></strong>.</div></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <img class="emoji emoji--small" alt="🔔" title="🔔" src="https://twemoji.maxcdn.com/2/72x72/1f514.png" />
+                                    <span class="chatlog__reaction-count">31</span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="chatlog__message " data-message-id="622144169195864118" id="message-622144169195864118">
+                        <div class="chatlog__content">
+                            <span class="markdown"><div class="quote"><img class="emoji " alt="dancepikachu" title="dancepikachu" src="https://cdn.discordapp.com/emojis/585652322814787594.gif" /> <strong>Become a Pok&#233;mon Trainer!</strong>
+React <img class="emoji " alt="🎒" title="🎒" src="https://twemoji.maxcdn.com/2/72x72/1f392.png" /> to get the role <span class="mention">@Pok&#233;mon Trainer &#127890;</span>. By getting this role, you will gain access to all available Pok&#233;cord channels.</div></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <img class="emoji emoji--small" alt="🎒" title="🎒" src="https://twemoji.maxcdn.com/2/72x72/1f392.png" />
+                                    <span class="chatlog__reaction-count">20</span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="chatlog__message " data-message-id="622144345763479553" id="message-622144345763479553">
+                        <div class="chatlog__content">
+                            <span class="markdown"><div class="quote"><img class="emoji " alt="🕹" title="🕹" src="https://twemoji.maxcdn.com/2/72x72/1f579.png" />️ <strong>Play games with friends</strong>
+React <img class="emoji " alt="🔁" title="🔁" src="https://twemoji.maxcdn.com/2/72x72/1f501.png" /> to get the role <span class="mention">@Gamer</span>. Get this role to unlock game channels such as <strong><span class="mention">#&#128377;lets-play-uno</span></strong>, <strong><span class="mention">#&#128373;lets-play-mafia</span></strong> and <strong><span class="mention">#&#128305;holy-grail-war</span></strong>.</div></span>
+
+                                <span class="chatlog__edited-timestamp" title="18-Nov-19 07:07 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <img class="emoji emoji--small" alt="🔁" title="🔁" src="https://twemoji.maxcdn.com/2/72x72/1f501.png" />
+                                    <span class="chatlog__reaction-count">17</span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="chatlog__message " data-message-id="622145292145393674" id="message-622145292145393674">
+                        <div class="chatlog__content">
+                            <span class="markdown"></span>
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="https://cdn.discordapp.com/attachments/596656679563821056/622145288022523915/Transparent_divider.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="https://cdn.discordapp.com/attachments/596656679563821056/622145288022523915/Transparent_divider.png" />
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="chatlog__message " data-message-id="622145351679213568" id="message-622145351679213568">
+                        <div class="chatlog__content">
+                            <span class="markdown"><img class="emoji " alt="NekoProud" title="NekoProud" src="https://cdn.discordapp.com/emojis/580832505574326302.gif" /> <strong>Register your level</strong></span>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="chatlog__message " data-message-id="622145406150770701" id="message-622145406150770701">
+                        <div class="chatlog__content">
+                            <span class="markdown"><div class="quote">React <img class="emoji " alt="💜" title="💜" src="https://twemoji.maxcdn.com/2/72x72/1f49c.png" /> if you are <strong>Level 80</strong> or above.</div></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <img class="emoji emoji--small" alt="💜" title="💜" src="https://twemoji.maxcdn.com/2/72x72/1f49c.png" />
+                                    <span class="chatlog__reaction-count">22</span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="chatlog__message " data-message-id="622145444994220032" id="message-622145444994220032">
+                        <div class="chatlog__content">
+                            <span class="markdown"><div class="quote">React <img class="emoji " alt="💙" title="💙" src="https://twemoji.maxcdn.com/2/72x72/1f499.png" /> if you are <strong>Level 90</strong> or above.</div></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <img class="emoji emoji--small" alt="💙" title="💙" src="https://twemoji.maxcdn.com/2/72x72/1f499.png" />
+                                    <span class="chatlog__reaction-count">21</span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="chatlog__message " data-message-id="622145478339067916" id="message-622145478339067916">
+                        <div class="chatlog__content">
+                            <span class="markdown"><div class="quote">React <img class="emoji " alt="💚" title="💚" src="https://twemoji.maxcdn.com/2/72x72/1f49a.png" /> if you are <strong>Level 100</strong> or above.</div></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <img class="emoji emoji--small" alt="💚" title="💚" src="https://twemoji.maxcdn.com/2/72x72/1f49a.png" />
+                                    <span class="chatlog__reaction-count">24</span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="chatlog__message " data-message-id="622145533909270548" id="message-622145533909270548">
+                        <div class="chatlog__content">
+                            <span class="markdown"><div class="quote">React <img class="emoji " alt="💛" title="💛" src="https://twemoji.maxcdn.com/2/72x72/1f49b.png" /> if you are <strong>Level 110</strong> or above.</div></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <img class="emoji emoji--small" alt="💛" title="💛" src="https://twemoji.maxcdn.com/2/72x72/1f49b.png" />
+                                    <span class="chatlog__reaction-count">8</span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="chatlog__message " data-message-id="622145580704989214" id="message-622145580704989214">
+                        <div class="chatlog__content">
+                            <span class="markdown"><div class="quote">React <img class="emoji " alt="❤" title="❤" src="https://twemoji.maxcdn.com/2/72x72/2764.png" /> if you are <strong>Level 120</strong> or above.</div></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <img class="emoji emoji--small" alt="❤" title="❤" src="https://twemoji.maxcdn.com/2/72x72/2764.png" />
+                                    <span class="chatlog__reaction-count">3</span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="chatlog__message " data-message-id="622145610535141376" id="message-622145610535141376">
+                        <div class="chatlog__content">
+                            <span class="markdown"></span>
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="https://cdn.discordapp.com/attachments/596656679563821056/622145607376568357/Transparent_divider.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="https://cdn.discordapp.com/attachments/596656679563821056/622145607376568357/Transparent_divider.png" />
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="chatlog__message " data-message-id="622145668756013059" id="message-622145668756013059">
+                        <div class="chatlog__content">
+                            <span class="markdown"><img class="emoji " alt="KannaPls" title="KannaPls" src="https://cdn.discordapp.com/emojis/401419631677407233.gif" /> <strong>Fight for your chaos avatar</strong></span>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="chatlog__message " data-message-id="622145749370798090" id="message-622145749370798090">
+                        <div class="chatlog__content">
+                            <span class="markdown"><div class="quote">React to <img class="emoji " alt="👑" title="👑" src="https://twemoji.maxcdn.com/2/72x72/1f451.png" /> to get the role <span class="mention">@Chaos King</span>. Use this to ping members who want to slay the <strong>Chaos King</strong>. <img class="emoji " alt="yoroshiku" title="yoroshiku" src="https://cdn.discordapp.com/emojis/408214883159638016.png" /></div></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <img class="emoji emoji--small" alt="👑" title="👑" src="https://twemoji.maxcdn.com/2/72x72/1f451.png" />
+                                    <span class="chatlog__reaction-count">19</span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="chatlog__message " data-message-id="622145787295432719" id="message-622145787295432719">
+                        <div class="chatlog__content">
+                            <span class="markdown"><div class="quote">React to <img class="emoji " alt="⚡" title="⚡" src="https://twemoji.maxcdn.com/2/72x72/26a1.png" /> to get the role <span class="mention">@Chaos Bull</span>. Use this to ping members who want to slay the <strong>Chaos Bull</strong>. <img class="emoji " alt="yourebanned" title="yourebanned" src="https://cdn.discordapp.com/emojis/431775181229391882.png" /></div></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <img class="emoji emoji--small" alt="⚡" title="⚡" src="https://twemoji.maxcdn.com/2/72x72/26a1.png" />
+                                    <span class="chatlog__reaction-count">14</span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="chatlog__message " data-message-id="622145826994651176" id="message-622145826994651176">
+                        <div class="chatlog__content">
+                            <span class="markdown"><div class="quote">React to <img class="emoji " alt="🌳" title="🌳" src="https://twemoji.maxcdn.com/2/72x72/1f333.png" /> to get the role <span class="mention">@Chaos Tree</span>. Use this to ping others who want to slay <strong>Chaos Tree</strong>. <img class="emoji " alt="ganbatte" title="ganbatte" src="https://cdn.discordapp.com/emojis/430984441624788992.png" /></div></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <img class="emoji emoji--small" alt="🌳" title="🌳" src="https://twemoji.maxcdn.com/2/72x72/1f333.png" />
+                                    <span class="chatlog__reaction-count">17</span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="chatlog__message " data-message-id="622145860205150219" id="message-622145860205150219">
+                        <div class="chatlog__content">
+                            <span class="markdown"><div class="quote">React to <img class="emoji " alt="🐎" title="🐎" src="https://twemoji.maxcdn.com/2/72x72/1f40e.png" /> to get the role <span class="mention">@Chaos Horse</span>. Use this to ping others who want to slay <strong>Chaos Horse</strong>. <img class="emoji " alt="yay" title="yay" src="https://cdn.discordapp.com/emojis/428767480035409932.png" /></div></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <img class="emoji emoji--small" alt="🐎" title="🐎" src="https://twemoji.maxcdn.com/2/72x72/1f40e.png" />
+                                    <span class="chatlog__reaction-count">20</span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="chatlog__message " data-message-id="622145904169975818" id="message-622145904169975818">
+                        <div class="chatlog__content">
+                            <span class="markdown"><div class="quote">React to <img class="emoji " alt="🦁" title="🦁" src="https://twemoji.maxcdn.com/2/72x72/1f981.png" /> to get the role <span class="mention">@Chaos Beast</span>. Use this to ping others who want to slay <strong>Chaos Beast</strong>. <img class="emoji " alt="leaveittome" title="leaveittome" src="https://cdn.discordapp.com/emojis/541221585915478017.png" /></div></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <img class="emoji emoji--small" alt="🦁" title="🦁" src="https://twemoji.maxcdn.com/2/72x72/1f981.png" />
+                                    <span class="chatlog__reaction-count">15</span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="chatlog__message " data-message-id="622145947073249281" id="message-622145947073249281">
+                        <div class="chatlog__content">
+                            <span class="markdown"><div class="quote">React to <img class="emoji " alt="💀" title="💀" src="https://twemoji.maxcdn.com/2/72x72/1f480.png" /> to get the role <span class="mention">@Chaos Colossal</span>. Use this to ping others who want to slay <strong>Chaos Colossal</strong>. <img class="emoji " alt="YuiFight" title="YuiFight" src="https://cdn.discordapp.com/emojis/591197294582562828.gif" /></div></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <img class="emoji emoji--small" alt="💀" title="💀" src="https://twemoji.maxcdn.com/2/72x72/1f480.png" />
+                                    <span class="chatlog__reaction-count">18</span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="chatlog__message " data-message-id="622146018963750931" id="message-622146018963750931">
+                        <div class="chatlog__content">
+                            <span class="markdown"><div class="quote">React to <img class="emoji " alt="🤖" title="🤖" src="https://twemoji.maxcdn.com/2/72x72/1f916.png" /> to get the role <span class="mention">@Chaos False Statue</span>. Use this to ping others who want to slay <strong>Chaos False Statue</strong>. <img class="emoji " alt="cardinal" title="cardinal" src="https://cdn.discordapp.com/emojis/408215381929361409.png" /></div></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <img class="emoji emoji--small" alt="🤖" title="🤖" src="https://twemoji.maxcdn.com/2/72x72/1f916.png" />
+                                    <span class="chatlog__reaction-count">23</span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="chatlog__message " data-message-id="622146054086852608" id="message-622146054086852608">
+                        <div class="chatlog__content">
+                            <span class="markdown"></span>
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="https://cdn.discordapp.com/attachments/596656679563821056/622146052069523486/Divider.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="https://cdn.discordapp.com/attachments/596656679563821056/622146052069523486/Divider.png" />
+                            </a>
+                        </div>
+
+
+                    </div>
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/356910190257373196/939d9e04efb0d7bdce12b4d5da4f8750.png" />
+            </div>
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Takashi#6662" data-user-id="356910190257373196">Takashi</span>
+
+
+                <span class="chatlog__timestamp">14-Sep-19 12:16 PM</span>
+
+                    <div class="chatlog__message " data-message-id="622465762371698700" id="message-622465762371698700">
+                        <div class="chatlog__content">
+                            <span class="markdown"><strong><span class="mention">@Don’t Panic Member</span> <span class="mention">@Alliance Guild</span> react to these roles above <img class="emoji " alt="👆" title="👆" src="https://twemoji.maxcdn.com/2/72x72/1f446.png" />  to get important information and any types of parties needed. We are trying to not tag @ everyone.</strong> <img class="emoji " alt="GWovoYayy" title="GWovoYayy" src="https://cdn.discordapp.com/emojis/390538500195352578.png" /></span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <img class="emoji emoji--small" alt="GWchadThink" title="GWchadThink" src="https://cdn.discordapp.com/emojis/366999782348292108.png" />
+                                    <span class="chatlog__reaction-count">5</span>
+                                </div>
+                                <div class="chatlog__reaction">
+                                    <img class="emoji emoji--small" alt="AttanoThink" title="AttanoThink" src="https://cdn.discordapp.com/emojis/595596726929326080.png" />
+                                    <span class="chatlog__reaction-count">5</span>
+                                </div>
+                                <div class="chatlog__reaction">
+                                    <img class="emoji emoji--small" alt="GWjiangPepeThumb" title="GWjiangPepeThumb" src="https://cdn.discordapp.com/emojis/407619074466643978.png" />
+                                    <span class="chatlog__reaction-count">11</span>
+                                </div>
+                                <div class="chatlog__reaction">
+                                    <img class="emoji emoji--small" alt="RemPeace" title="RemPeace" src="https://cdn.discordapp.com/emojis/558693521117282314.png" />
+                                    <span class="chatlog__reaction-count">5</span>
+                                </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+</div>
+
+</body>
+</html>
